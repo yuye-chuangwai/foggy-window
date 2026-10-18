@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>起雾的窗 · Foggy Window</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="room">
+    <div class="window-frame">
+      <div class="window-inner">
+        <canvas id="glass"></canvas>
+        <div id="fade" class="fade"></div>
+        <div id="hint" class="hint">按住拖动，在起雾的玻璃上画画吧</div>
+      </div>
+      <div class="sill"></div>
+    </div>
+    <div class="panel">
+      <div class="seg" id="sceneSeg">
+        <button data-v="dusk" class="on">黄昏</button>
+        <button data-v="night">夜晚</button>
+      </div>
+      <div class="seg" id="rainSeg">
+        <button data-v="off" class="on">不下雨</button>
+        <button data-v="rain">下雨</button>
+      </div>
+      <button id="reset" class="reset" title="擦掉全部，重新起雾">↻ 重新起雾</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
